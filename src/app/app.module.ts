@@ -7,10 +7,11 @@ import { HelloComponent } from './hello.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesService } from './courses.service';
 import { InputComponent } from './input/input.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, CoursesComponent, InputComponent ],
+  declarations: [ AppComponent, HelloComponent, CoursesComponent, InputComponent, TitleCasePipe ],
   bootstrap:    [ AppComponent ],
   providers: [CoursesService]
 })
